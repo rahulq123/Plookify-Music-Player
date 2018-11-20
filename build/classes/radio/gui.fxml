@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="684.0" prefWidth="801.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="radio.GuiController">
+   <top>
+      <AnchorPane prefHeight="87.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="submit" layoutX="520.0" layoutY="37.0" mnemonicParsing="false" onAction="#DIsplayListView" text="Submit" />
+            <TextField fx:id="searchfield" layoutX="309.0" layoutY="37.0" />
+            <Text layoutX="176.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Artist:" />
+            <Button fx:id="account" layoutX="46.0" layoutY="31.0" mnemonicParsing="false" onAction="#AccountCall" prefHeight="30.0" prefWidth="59.0" text="&lt;" />
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane fx:id="ListedSearch" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ListView fx:id="ListedSearch1s" layoutX="9.0" layoutY="34.0" prefHeight="338.0" prefWidth="208.0" />
+            <Label layoutX="56.0" layoutY="6.0" text="Song Name" />
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ListView fx:id="GenreList" layoutX="-106.0" layoutY="33.0" prefHeight="343.0" prefWidth="306.0" />
+            <Label layoutX="32.0" layoutY="6.0" text="Genre" />
+         </children>
+      </AnchorPane>
+   </right>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ListView fx:id="ArtistList" layoutX="4.0" layoutY="33.0" prefHeight="339.0" prefWidth="272.0" />
+            <Label layoutX="111.0" layoutY="6.0" text="Similar Artists" />
+            <Label layoutX="98.0" layoutY="424.0" text="Name Radio Playlist" />
+            <TextField fx:id="namedPlaylists" layoutX="231.0" layoutY="419.0" />
+            <Button fx:id="savePlaylist" layoutX="248.0" layoutY="457.0" mnemonicParsing="false" onAction="#SavedPlaylist" text="Save Radio Playlist" />
+         </children></AnchorPane>
+   </center>
+</BorderPane>

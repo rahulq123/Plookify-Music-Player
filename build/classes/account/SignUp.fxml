@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="535.0" prefWidth="656.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="account.SignUpController">
+    <children>
+        <Button fx:id="Button2" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goToLoginPage" prefHeight="25.0" prefWidth="170.0" text="&lt;-- Go Back to Login Page" />
+        <TextField fx:id="FirstName" layoutX="75.0" layoutY="80.0" prefHeight="31.0" prefWidth="149.0" promptText="First Name" />
+        <TextField fx:id="LastName" layoutX="75.0" layoutY="121.0" prefHeight="31.0" prefWidth="149.0" promptText="Last Name" />
+        <TextField fx:id="UserName" layoutX="75.0" layoutY="158.0" prefHeight="31.0" prefWidth="149.0" promptText="User Name" />
+        <PasswordField fx:id="Password" layoutX="75.0" layoutY="201.0" prefHeight="31.0" prefWidth="149.0" promptText="Password" />
+        <PasswordField fx:id="ConfirmPassword" layoutX="75.0" layoutY="244.0" prefHeight="31.0" prefWidth="149.0" promptText="Confirm Password" />
+        <TextField fx:id="Address" layoutX="75.0" layoutY="288.0" prefHeight="59.0" prefWidth="217.0" promptText="Address" />
+        <TextField fx:id="ContactNumber" layoutX="75.0" layoutY="357.0" prefHeight="31.0" prefWidth="149.0" promptText="Contact Number" />
+        <Button fx:id="registerfreebutton" layoutX="75.0" layoutY="411.0" mnemonicParsing="false" onAction="#registerFree" prefHeight="25.0" prefWidth="100.0" text="Register Free" />
+        <Button fx:id="registersubscribedbutton" layoutX="235.0" layoutY="411.0" mnemonicParsing="false" onAction="#registerSubscribe" prefHeight="25.0" prefWidth="124.0" text="Register Subscribe" />
+        <Button fx:id="Button3" layoutX="404.0" layoutY="411.0" mnemonicParsing="false" onAction="#clear" prefHeight="25.0" prefWidth="100.0" text="Clear" />
+        <Label layoutX="198.0" layoutY="415.0" text="OR" />
+    </children>
+</AnchorPane>

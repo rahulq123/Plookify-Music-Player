@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="875.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finaltrackplayer.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="875.0" layoutX="3.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="finaltrackplayer\TB.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="table" layoutX="506.0" layoutY="261.0" onMouseReleased="#playFromNowP" prefHeight="318.0" prefWidth="350.0" />
+      <Button fx:id="addButton" layoutX="385.0" layoutY="332.0" mnemonicParsing="false" onMouseClicked="#addButtonClicked" opacity="0.0" prefHeight="80.0" prefWidth="115.0" text="addButton" />
+      <TableView fx:id="resultTable" layoutX="19.0" layoutY="332.0" onMouseReleased="#playFromResults" prefHeight="250.0" prefWidth="350.0" />
+      <TextField fx:id="searchText" layoutX="19.0" layoutY="292.0" prefHeight="25.0" prefWidth="196.0" promptText="Search by Artist, Genre or Name" />
+      <Button fx:id="searchButton" layoutX="216.0" layoutY="287.0" mnemonicParsing="false" onMouseClicked="#searchButtonClicked" opacity="0.0" prefHeight="36.0" prefWidth="249.0" text="searchButton" />
+      <Button fx:id="playButton" layoutX="397.0" layoutY="109.0" mnemonicParsing="false" onMouseClicked="#play" opacity="0.0" prefHeight="93.0" prefWidth="91.0" text="Button" />
+      <Button fx:id="stopButton" layoutX="303.0" layoutY="120.0" mnemonicParsing="false" onMouseClicked="#stop" opacity="0.0" prefHeight="72.0" prefWidth="76.0" text="Button" />
+      <Button fx:id="pauseButton" layoutX="512.0" layoutY="120.0" mnemonicParsing="false" onMouseClicked="#pause" opacity="0.0" prefHeight="72.0" prefWidth="76.0" text="Button" />
+      <Button fx:id="rewindButton" layoutX="223.0" layoutY="135.0" mnemonicParsing="false" onMousePressed="#rewindPressed" onMouseReleased="#rewindReleased" opacity="0.0" prefHeight="62.0" prefWidth="58.0" text="Button" />
+      <Button fx:id="forwardButton" layoutX="603.0" layoutY="125.0" mnemonicParsing="false" onMousePressed="#forwardPressed" onMouseReleased="#forwardReleased" opacity="0.0" prefHeight="62.0" prefWidth="58.0" text="Button" />
+      <Button fx:id="skipButton" layoutX="396.0" layoutY="243.0" mnemonicParsing="false" onMouseClicked="#skip" opacity="0.0" prefHeight="36.0" prefWidth="85.0" text="Button" />
+      <TextField fx:id="skipText" layoutX="332.0" layoutY="249.0" prefHeight="25.0" prefWidth="64.0" promptText="Seconds" />
+      <Label fx:id="durationLabel" layoutX="127.0" layoutY="266.0" prefHeight="17.0" prefWidth="64.0" text="00:00" textFill="WHITE" />
+      <Label fx:id="elapsedLabel" layoutX="127.0" layoutY="247.0" text="00:00" textFill="WHITE" />
+      <Label fx:id="forwardLabel" layoutX="690.0" layoutY="138.0" prefHeight="35.0" prefWidth="58.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="rewindLabel" layoutX="156.0" layoutY="149.0" prefHeight="17.0" prefWidth="48.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorLabel" layoutX="531.0" layoutY="55.0" prefHeight="36.0" prefWidth="333.0" textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorLabel2" layoutX="615.0" layoutY="96.0" prefHeight="17.0" prefWidth="249.0" textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="minuteText" layoutX="260.0" layoutY="249.0" prefHeight="25.0" prefWidth="64.0" promptText="Minutes" />
+      <Label fx:id="nameLabel" layoutX="340.0" layoutY="64.0" prefHeight="27.0" prefWidth="301.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="removeButton" layoutX="385.0" layoutY="436.0" mnemonicParsing="false" onMouseClicked="#removeButtonClicked" opacity="0.0" prefHeight="80.0" prefWidth="115.0" />
+      <Button layoutX="45.0" layoutY="123.0" mnemonicParsing="false" onAction="#switchtoAccount" prefHeight="35.0" prefWidth="48.0" text="&lt;" />
+   </children>
+</AnchorPane>

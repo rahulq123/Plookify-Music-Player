@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="backgroundcolour" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="683.9999000000025" prefWidth="801.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="account.UserController">
+   <children>
+      <Label fx:id="username" layoutX="47.0" layoutY="37.0" prefHeight="55.0" prefWidth="218.0" text="Displays username" textFill="#ee1d06">
+         <font>
+            <Font size="21.0" />
+         </font></Label>
+      <Label fx:id="PaymentStatus" layoutX="209.0" layoutY="186.0" prefHeight="62.0" prefWidth="462.0" />
+      <Button fx:id="OKButton" layoutX="637.0" layoutY="442.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="59.0" text="OK" />
+      <Button fx:id="trackButton" layoutX="22.0" layoutY="119.0" mnemonicParsing="false" onAction="#goToTrack" prefHeight="33.0" prefWidth="108.0" text="Track" />
+      <Button fx:id="signoutDeviceButton" layoutX="637.0" layoutY="20.0" mnemonicParsing="false" onAction="#signOut" prefHeight="33.0" prefWidth="68.0" text="Sign Out" />
+      <Button fx:id="closeButton" layoutX="519.0" layoutY="20.0" mnemonicParsing="false" onAction="#closeAccount" prefHeight="33.0" prefWidth="108.0" text="Close Account" />
+      <Button fx:id="subscribeButton" layoutX="397.0" layoutY="20.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="114.0" text="Subscribe Now" />
+      <Button fx:id="playlistButton" layoutX="22.0" layoutY="159.0" mnemonicParsing="false" onAction="#goToPlaylist" prefHeight="33.0" prefWidth="108.0" text="Playlist" />
+      <Button fx:id="socialButton" layoutX="22.0" layoutY="200.0" mnemonicParsing="false" onAction="#goToSocial" prefHeight="33.0" prefWidth="108.0" text="Social" />
+      <Button fx:id="radioButton" layoutX="22.0" layoutY="244.0" mnemonicParsing="false" onAction="#goToRadio" prefHeight="33.0" prefWidth="108.0" text="Radio" />
+      <Button fx:id="viewDeviceButton" layoutX="22.0" layoutY="366.0" mnemonicParsing="false" onAction="#viewDevice" prefHeight="35.0" prefWidth="108.0" text="View Device" />
+      <Label layoutX="22.0" layoutY="319.0" prefHeight="33.0" prefWidth="108.0" text="My Device">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

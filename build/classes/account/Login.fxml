@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="535.0" prefWidth="656.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="account.LoginController">
+    <children>
+        <TextField fx:id="txtusername" layoutX="245.0" layoutY="193.0" promptText="Username" />
+        <PasswordField fx:id="txtpassword" layoutX="246.0" layoutY="243.0" promptText="Password" />
+        <Button layoutX="294.0" layoutY="311.0" mnemonicParsing="false" onAction="#Login" prefHeight="25.0" prefWidth="68.0" text="Login" />
+        <Button layoutX="294.0" layoutY="361.0" mnemonicParsing="false" onAction="#signUp" prefHeight="25.0" prefWidth="68.0" text="Sign Up" />
+        <Label fx:id="isConnected" layoutX="138.0" layoutY="114.0" text="Login to Plookify with your username and password" textFill="#f21616">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+    </children>
+</AnchorPane>

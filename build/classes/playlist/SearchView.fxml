@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="searchAnchorpane" prefHeight="422.0" prefWidth="310.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="playlist.SearchViewController">
+  <children>
+    <ListView id="searchlistView" fx:id="searchListView" layoutX="0.0" layoutY="0.0" prefHeight="422.0" prefWidth="310.0">
+      <contextMenu>
+        <ContextMenu fx:id="contentmenu">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#addToPlaylist" text="Add to Playlist" fx:id="ADDtoPlaylist" />
+          </items>
+        </ContextMenu>
+      </contextMenu>
+    </ListView>
+  </children>
+</AnchorPane>
